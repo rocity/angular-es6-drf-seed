@@ -1,0 +1,36 @@
+extends: google
+
+parser: babel-eslint
+
+parserOptions:
+  sourceType: "module"
+
+env:
+  es6: true
+  browser: true
+  jasmine: true
+  jquery: true
+
+globals:
+  angular: true
+  _: true
+
+rules:
+  quotes:
+    - 2
+    - "single"
+  arrow-parens: "off"
+  semi: "off"
+  comma-dangle: "off"
+  max-len: ["error", {"code": 200}]
+  require-jsdoc: "off"
+  valid-jsdoc: "off"
+  camelcase: "off"
+  no-useless-escape: "off"
+  no-var: "off"
+  prefer-spread: "off"
+  no-case-declarations: "off"
+  new-cap: "off"
+
+plugins:
+  - angular

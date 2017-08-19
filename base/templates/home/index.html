@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'scripts/app/build/css/main.bundle.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+  <app></app>
+{% endblock content %}
+
+{% block extra_js %}
+  <script type="text/javascript" src="{% static 'scripts/app/build/js/vendor.bundle.js' %}"></script>
+  <script type="text/javascript" src="{% static 'scripts/app/build/js/app.bundle.js' %}"></script>
+{% endblock extra_js %}

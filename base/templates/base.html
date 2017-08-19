@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    {% block extra_css %}{% endblock extra_css %}
+
+  </head>
+  <body>
+    <base href="/">
+    {% block content %}{% endblock content %}
+
+    {% block extra_js %}{% endblock extra_js %}
+  </body>
+</html>
