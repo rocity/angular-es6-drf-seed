@@ -20,17 +20,23 @@ This seed uses the following stack:
 
 _A `virtualenv` is recommended._
 
-`$pip install -r requirements.txt`
+` $pip install -r requirements.txt`
 
 ## Install front-end packages using `yarn`
 
 `$ yarn install`
+
+# Launching the Project
 
 # Make commands
 
 Watch changes on front-end code
 
 `$ make watch-webapp`
+
+# Running the API development server
+
+`$ python manage.py runserver`
 
 # License
 
