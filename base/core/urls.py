@@ -22,5 +22,5 @@ from base.home.views import HomeView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^(.*)$', HomeView.as_view(), name='home'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
